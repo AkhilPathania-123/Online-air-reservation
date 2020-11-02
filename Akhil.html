@@ -1,0 +1,367 @@
+<html>
+<head>
+<title>Jackwares travel project</title>
+<script language="JavaScript">
+</script>
+<style>
+	.grid{text-align: right;
+		grid-template-columns: 40% 40%;
+	grid-column-gap: 2em;
+grid-row-gap: 1em;}
+	.abc{padding: 1em;
+		margin: 1px;
+		color: black;}
+
+.mySlides {display:none;}
+body{
+margin:0;
+background:#f2f2f2f;
+}
+.nav{
+width:100%;
+color: white;
+border: 0.5px solid white;
+height:39px;
+box-shadow: 20px;
+background-color: grey;
+}
+ul{
+list-style:none;
+padding:0;
+margin:0;
+position:absolute;
+}
+ul li{
+float:left;
+margin_top:10px;
+}
+ul li a{
+width:560px;
+color:white;
+diplay:block;
+text-decoration:none;
+font-size:30px;
+text-align:center;
+padding:10px;
+border-radius:10px;
+font-family:Century Gothic;
+font-weigth:bold:
+}
+a:hover{
+background:#669900;
+}
+ul li ul {
+background:#000033;
+}
+ul li ul li {
+float:none;
+}
+ul li ul {
+display:none;
+}
+ul li:hover ul {
+display:block;
+}
+.container {
+        padding: 16px;
+      }
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+</style>
+<script>
+
+
+         function validate()
+      {
+         if( document.getElementById("t1").value== "")
+         {
+            alert( "Please provide your name!" );
+            return false;
+         }
+
+
+         if( document.getElementById("t2").value== "")
+         {
+            alert( "Please provide password" );
+            return false;
+         }
+         	
+
+         if( document.getElementById("t3").value== "")
+         {
+            alert( "Retype Password");
+            return false;
+         }
+
+         if(t2.value!=t3.value)
+         {
+            alert("Password Mismatch, Provide same password");
+            return false;
+         }
+
+
+         var emailID = document.getElementById("t4").value;
+         var atpos = emailID.indexOf("@");
+         var dotpos = emailID.lastIndexOf(".");       
+         if (document.getElementById("t4").value == "" || atpos < 1 || ( dotpos < atpos+2 )) 
+         {
+            alert("Please enter correct email ID");
+            return false;
+         }
+
+
+         var option=document.getElementsByName('Gender');
+
+         if (!(option[0].checked || option[1].checked|| option[2].checked)) {
+             alert("Please Select Your Gender");
+             return false;
+         }
+         var abc = document.getElementById("t6").value;
+                
+         if( document.getElementById("t6").value == "")
+         {
+            alert( "Please provide zip code." );
+            return false;
+         }
+         if(abc<5)
+         {
+            alert("ZipCode cannot be less than 5 digits")
+            return false;
+         }
+
+         
+
+         
+         if( document.getElementById("t7").value == "-1" )
+         {
+            alert( "Please select country code" );
+            return false;
+         }
+
+
+         var num = document.getElementById("t8").value;
+         if( document.getElementById("t8").value == "")
+         {
+            alert( "Phone number cannot be left blank" );
+            return false;
+         }
+         if(num<10)
+         {
+            alert("Phone number cannot be less than 10 digits");
+            return false;
+         }
+
+
+         {
+            alert("Your id is successfully registered");
+         return( true );
+         }
+      }
+      
+      </script>
+</head>
+<body background="animal.jpg"; text ="Black">
+<center><font size="40" color="RED">!!!MAKE YOUR OWN RESERVATION!!!</font></center>
+	<hr>
+	<hr>
+	<hr>
+<img src="aer.jpg" alt="p16p" width="1200" height="250"></div></align>
+<hr>
+<hr>
+<hr>
+<h6 style="background-color:black">
+<h2 style="background-color:black">
+        <div class="nav">
+<ul>
+<li><a href ="file:///E:/installed%20apps/html/Akhil.html" >HOME</a>
+<ul>
+</ul>
+</li>
+<li><a href ="file:///E:/installed%20apps/html/index.html" >WHERE TO GO</a>
+</li>
+<li><a href ="file:///E:/installed%20apps/html/about us.html" >ABOUT US</a></li>
+<li><a href="#">CONTACT US</a>
+<ul>
+<li><a href="#">+9998881111</a></li>
+</ul>
+</li>
+<li><a href="#">SEARCH</a></li><input type="text" placeholder="SEARCH">
+</ul>
+</div>
+    <hr></h2>
+    <div style="float:right;align=right">
+    <div style="float:right;align=right">Advertisment</div>
+    <br><div style="float:right;align=right">
+    <img src="add.JPG" width="330px" height="300px" align="right"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div style="float:right;align=right">
+    <img src="addd.JPG" width="330px" height="250px" align="right"></div>
+    </div></align></align>   
+
+<div class="slidesshow" width="1200px" height="400px">
+  <img class="mySlides" src="aeroplane.jpg" width="1000px" height="400px">
+  <img class="mySlides" src="plane.jpg" width="1000px" height="400px">
+  <img class="mySlides" src="air.jpg" width="1000px" height="400px">
+  <img class="mySlides" src="plane1.jpg" width="1000px" height="400px">
+ <img class="mySlides" src="plane2.jpg" width="1000px" height="400px">
+<img class="mySlides" src="aeropla.jpg" width="1000px" height="400px">
+</div>
+<script>
+var myIndex = 0;
+akhil();
+function akhil() {
+  var i;
+  
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(akhil, 3000); // Change image every 3 seconds
+  }
+</script>
+<br><br>
+<h1 style="font-size:70px;background-color: transparent;color:RED"><center><b><marquee>JACKER AIR RESERVATIONS</marquee></b></font></center></h1>
+<HR>
+<hr>
+ <div class="Box">
+	<form name="myForm" onsubmit="return(validate());">
+		
+	<font color="RED"><h1><u><i><b>SIGN UP!</b></i></u></h1></font>
+<table>
+<tr>
+<td>Name:
+</td>
+</tr>
+
+<tr>
+<td><input type="text" placeholder="Name" name"" id="t1">
+</td>
+</tr>
+
+
+<tr>
+<td>Password:
+</td>
+</tr>
+
+<tr>
+<td><input type="Password" placeholder="**********" name"" id="t2">
+</td>
+</tr>
+
+
+<tr>
+<td>Retype Password:
+</td>
+</tr>
+
+<tr>
+<td><input type="Password" placeholder="**********" name"" id="t3">
+</td>
+</tr>
+
+<tr>
+<td>Email:
+</td>
+</tr>
+
+<tr>
+<td><input type="mail" placeholder="Email" name"" id="t4">
+</td>
+</tr>
+
+
+<tr>
+<td>Gender
+</td>
+<td>
+<input type="radio" name="Gender" id="t5">Male
+<input type="radio" name="Gender" id="t5">Female
+<input type="radio" name="Gender" id="t5">Other
+</td>
+</tr>
+<tr></tr>
+
+
+<tr>
+<td>ZipCode:
+</td>
+</tr>
+
+<tr>
+<td><input type="text" placeholder="12345" name"" id="t6">
+</td>
+</tr>
+
+
+
+<tr>
+<td>Phone No:
+</td>
+<td>
+<select name="Phone Number" id="t7">
+<option value="-1" selected>[Country code]</option>
+<option>88</option>
+<option>91</option>
+<option>75</option>
+<option>81</option>
+<option>93</option>
+<option>96</option>
+</select>
+<input type="Phone"  placeholder="9876543218" name"" id="t8">
+</td>
+</tr>
+
+
+<center>
+<tr>
+<td><input type="Submit" value ="Submit">
+</td>
+</tr>
+</center>
+
+</table>
+</form>
+</div>
+<br>
+<hr>
+<hr>
+<font color="RED"><h1><u><i><b>LOGIN!</b></i></u></h1></font>
+<form onsubmit="return(validate());>
+     <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button type="submit" id="t11">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="login_cancelbtn">Cancel</button>
+                </div>
+</form>
+
+</body>
+</html> 
+
+</font>	
+<hr>
+<hr>
+<hr>
+<img src="lower.jpg" alt="p16p" width="1900" height="240"></div></align>
+</body>
+</html>
